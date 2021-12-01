@@ -1,9 +1,11 @@
 # Introduction
+In this cast study, I developed an ETL solution that scrapes the top 50 movies from the list of "Top Rated English Movies by Genre" of each genre into a local csv file.
+Then I developed second ETL pipeline that extracts raw data from the csv file, performed necessary transformations and loaded into postgresSQL database.
 
 
 
 # Dependencies
-This project requires Python 3.8.12 and the following Python libraries:
+It requires Python 3.8.12 and the following Python libraries:
 ```python
 #to open and load data into csv files
 csv
