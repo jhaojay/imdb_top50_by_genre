@@ -42,8 +42,7 @@ it should contain 1201 rows including a row of headers:
 >>> with open(csv_file,"r") as f:
 ...     reader = csv.reader(f,delimiter = ",")
 ...     print(len(list(reader)))
-```
-```
+
 1201
 ```
 
