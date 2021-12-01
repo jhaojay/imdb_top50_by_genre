@@ -57,7 +57,7 @@ FROM movie_ranking_by_genre
 | 1200 |
 
 <br/><br/>
-Lastly, randomly select 10 rows from the database as an sample to validate the infomation:
+Lastly, randomly select 10 rows from the database as an sample to check movie infomation against the IMDB website:
 ```SQL
 SELECT *
 FROM
