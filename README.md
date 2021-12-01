@@ -3,7 +3,7 @@
 
 
 # Dependencies
-This project requires the following Python libraries:
+This project requires Python 3.8.12 and the following Python libraries:
 ```python
 #to open and load data into csv files
 csv
@@ -17,13 +17,13 @@ beautifulsoup4, requests, re, lxml
 psycopg2, configparser 
 ```
 
-# Usage
+# Installation
 Installing the necessary dependencies listed in the Dependencies section:
 ```
 pip install -r requirements.txt
 ```
 
-
+# Usage
 
 # Validation
 
