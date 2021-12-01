@@ -5,7 +5,7 @@
 # Dependencies
 This project requires the following Python libraries:
 ```
-csv, beautifulsoup4, requests, re, lxml, psycopg2, configparser
+csv #to
 ```
 
 
@@ -13,7 +13,9 @@ csv, beautifulsoup4, requests, re, lxml, psycopg2, configparser
 # Usage
 
 
-
+```
+csv, beautifulsoup4, requests, re, lxml, psycopg2, configparser
+```
 
 # Validation
 
