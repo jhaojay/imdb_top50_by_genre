@@ -28,6 +28,7 @@ First, scrape all the target movie infomation from IMDB and save it to "movie_ou
 ```python
 python imdb_scrapper_to_csv.py
 ```
+<br/><br/>
 Then, load all the rows from the output csv file into postgresSQL database:
 ```python
 python load_csv_to_sql.py
