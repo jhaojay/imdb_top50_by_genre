@@ -44,8 +44,7 @@ it should contain 1201 rows including a row of headers:
 ...     print(len(list(reader)))
 
 1201
-```
-__
+```__
 Next, check the total row count in the "movie_ranking_by_genre" table in pgAdmin4:
 ```SQL
 SELECT COUNT(*)
