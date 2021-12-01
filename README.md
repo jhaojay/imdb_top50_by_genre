@@ -24,9 +24,13 @@ pip install -r requirements.txt
 ```
 
 # Usage
-First, scrape
-```
+First, scrape all the target movie infomation from IMDB and save it to "movie_output.csv":
+```python
 python imdb_scrapper_to_csv.py
+```
+Then, load all the rows from the output csv file into postgresSQL database:
+```python
+python load_csv_to_sql.py
 ```
 
 # Validation
