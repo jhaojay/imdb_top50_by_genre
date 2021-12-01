@@ -51,11 +51,6 @@ Next, check the total row count in the "movie_ranking_by_genre" table in pgAdmin
 SELECT COUNT(*)
 FROM movie_ranking_by_genre
 ```
-```
-| Attempt | #1 | #2 |
-| :---: | :---: | :---: |
-| Seconds | 301 | 283 |
-```
-| Attempt | #1 | #2 |
-| :---: | :---: | :---: |
-| Seconds | 301 | 283 |
+| count | 
+| :---: |
+| 1200 |
