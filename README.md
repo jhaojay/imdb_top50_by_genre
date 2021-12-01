@@ -5,13 +5,16 @@
 # Dependencies
 This project requires the following Python libraries:
 ```
-csv #to open and load data into csv files
+#to open and load data into csv files
+csv 
 ```
 ```
-beautifulsoup4, requests, re, lxml #to scrape and parse movie infomation from IMDB
+#to scrape and parse movie infomation from IMDB
+beautifulsoup4, requests, re, lxml 
 ```
 ```
-psycopg2, configparser #to configer and connect PostgreSQL
+#to configer and connect PostgreSQL
+psycopg2, configparser 
 ```
 
 # Usage
