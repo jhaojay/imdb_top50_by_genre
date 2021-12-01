@@ -34,5 +34,15 @@ python load_csv_to_sql.py
 ```
 
 # Validation
-
+First check the total row count of the output csv file, in Python console:
+```
+>>> import csv
+>>> csv_file = "movie_output.csv"
+>>> with open(csv_file,"r") as f:
+...     reader = csv.reader(f,delimiter = ",")
+...     print(len(list(reader)))
+```
+```
+1201
+```
 
