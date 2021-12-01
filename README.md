@@ -45,7 +45,7 @@ it should contain 1201 rows including a row of headers:
 
 1201
 ```
-
+__
 Next, check the total row count in the "movie_ranking_by_genre" table in pgAdmin4:
 ```SQL
 SELECT COUNT(*)
@@ -54,7 +54,7 @@ FROM movie_ranking_by_genre
 | count | 
 | :---: |
 | 1200 |
-
+__
 Lastly, randomly select 10 rows from the database as an sample to validate the infomation:
 ```SQL
 SELECT *
