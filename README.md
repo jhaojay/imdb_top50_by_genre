@@ -34,8 +34,9 @@ python load_csv_to_sql.py
 ```
 
 # Validation
-First check the total row count of the output csv file, in Python console, it should contain 1201 rows including a row of headers:
-```
+First, check the total row count of the output csv file in Python console,
+it should contain 1201 rows including a row of headers:
+```python
 >>> import csv
 >>> csv_file = "movie_output.csv"
 >>> with open(csv_file,"r") as f:
@@ -45,4 +46,8 @@ First check the total row count of the output csv file, in Python console, it sh
 ```
 1201
 ```
-
+Next, check the total row count in the "movie_ranking_by_genre" table in PostgreSQL terminal:
+```SQL
+SELECT COUNT(*)
+FROM movie_ranking_by_genre
+```
