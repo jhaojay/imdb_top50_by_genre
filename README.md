@@ -1,7 +1,8 @@
 # Introduction
 In this cast study, I developed an ETL solution that scrapes the top 50 movies from the list of "Top Rated English Movies by Genre" of each genre into a local csv file.
 Then I developed second ETL pipeline that extracts raw data from the csv file, performed necessary transformations and loaded into postgresSQL database.
-
+<br/><br/>
+The database schema design(click to enlarge picture):
 ![alt text](https://github.com/jhaojay/imdb_top50_by_genre/blob/main/schema.JPG?raw=true)
 
 # Dependencies
