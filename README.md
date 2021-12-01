@@ -34,7 +34,7 @@ python load_csv_to_sql.py
 ```
 
 # Validation
-First check the total row count of the output csv file, in Python console:
+First check the total row count of the output csv file, in Python console, it should contain 1201 rows including a row of headers:
 ```
 >>> import csv
 >>> csv_file = "movie_output.csv"
