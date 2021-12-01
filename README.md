@@ -24,6 +24,10 @@ pip install -r requirements.txt
 ```
 
 # Usage
+First, scrape
+```
+python imdb_scrapper_to_csv.py
+```
 
 # Validation
 
