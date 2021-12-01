@@ -19,8 +19,7 @@ psycopg2, configparser
 
 # Usage
 ```python
-#to install all the dependencies list above
-pip install -r requirements.txt
+pip install -r requirements.txt #to install all the dependencies list above
 ```
 
 
