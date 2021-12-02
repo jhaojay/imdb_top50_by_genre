@@ -8,7 +8,7 @@ Movies' imdb ids, titles, release years, certificates, running time, ratings, me
 ![alt text](https://github.com/jhaojay/imdb_top50_by_genre/blob/main/schema.JPG?raw=true)
 
 # Dependencies
-Python 3.8.12 and the following Python libraries was used:
+Python 3.8.12 and the following Python libraries were used:
 ```python
 #to open and load data into csv files
 csv
