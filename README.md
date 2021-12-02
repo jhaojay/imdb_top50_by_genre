@@ -8,7 +8,7 @@ Movies' titles, release years, certificates, run time, ratings, metascores, desc
 ![alt text](https://github.com/jhaojay/imdb_top50_by_genre/blob/main/schema.JPG?raw=true)
 
 # Dependencies
-It requires Python 3.8.12 and the following Python libraries:
+It requires <mark>Python 3.8.12</mark> and the following Python libraries:
 ```python
 #to open and load data into csv files
 csv
