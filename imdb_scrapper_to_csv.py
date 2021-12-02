@@ -68,6 +68,9 @@ for num_link in range(len(links)):
     descriptions = [
         child.find_all("p")[1].text.strip("\n") for child in movie_info_blocks
     ]
+
+    # there are multiple directors and casts for each movie,
+    # for each person, their names and imdb_name_ids are scrapped
     directors_and_casts = [child.find_all("p")[2] for child in movie_info_blocks]
     directors = []
     casts = []
