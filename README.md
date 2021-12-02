@@ -41,7 +41,7 @@ python imdb_scrapper_to_csv.py
 <br/><br/>
 Then, load all the rows from the output csv file into postgresSQL database:
 ```python
-python load_csv_to_sql.py
+python load_csv_to_db.py
 ```
 
 # Validation
