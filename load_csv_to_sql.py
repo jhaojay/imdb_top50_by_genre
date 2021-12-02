@@ -1,6 +1,7 @@
 import csv
 from mydb import MyDB
 
+
 class IMDBLoader:
     def __init__(self, db, csv_file_path):
         self.db = db
@@ -69,7 +70,7 @@ class IMDBLoader:
                                             ON CONFLICT DO NOTHING '''
                         self.db.query(insert_script, (person_id, imdb_person_id, full_name))
 
-                        # increse id only when person is unique
+                        # increases id only when person is unique
                         if self.db.status_message()[-1] == '1':
                             person_id += 1
                     else:
@@ -129,8 +130,7 @@ class IMDBLoader:
                               row["gross"])
                 self.db.query(insert_script, insert_val)
 
-
-                if self.db.status_message()[-1] == '1': # increse id only when movie is unique
+                if self.db.status_message()[-1] == '1':  # increases id only when movie is unique
                     movie_id += 1
 
         # change primary key from imdb_movie_id to id
@@ -279,9 +279,8 @@ if __name__ == "__main__":
     mydb = MyDB()
     mydb.connect()
 
-
-    csv_file_path = "movie_output.csv"
-    loader = IMDBLoader(mydb, csv_file_path)
+    file_path = "movie_output.csv"
+    loader = IMDBLoader(mydb, file_path)
 
     loader.load_genre()
     loader.load_person()
@@ -291,6 +290,5 @@ if __name__ == "__main__":
     loader.load_movie_ranking_by_genre()
     loader.load_movie_director()
     loader.load_movie_cast()
-
 
     mydb.close()
