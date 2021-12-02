@@ -2,7 +2,9 @@
 In this cast study, I developed an ETL solution that scrapes the top 50 movies from the list of "Top Rated English Movies by Genre" of each genre into a local csv file.
 Then I developed second ETL pipeline that extracts raw data from the csv file, performed necessary transformations and loaded into postgresSQL database.
 <br/><br/>
-The database schema design(click to enlarge picture):
+Movies' titles, release years, certificates, run time, ratings, metascores, descriptions, votes, gross, directors and casts are scrapped and stored.
+<br/><br/>
+Database schema design(click to enlarge):
 ![alt text](https://github.com/jhaojay/imdb_top50_by_genre/blob/main/schema.JPG?raw=true)
 
 # Dependencies
@@ -12,11 +14,11 @@ It requires Python 3.8.12 and the following Python libraries:
 csv
 ```
 ```python
-#to scrape and parse movie infomation from IMDB
+#to scrape and parse movie information from IMDB
 beautifulsoup4, requests, re, lxml 
 ```
 ```python
-#to configer and connect PostgreSQL
+#to configure and connect PostgreSQL
 psycopg2, configparser 
 ```
 
@@ -27,7 +29,7 @@ pip install -r requirements.txt
 ```
 
 # Usage
-First, scrape all the target movie infomation from IMDB and save it to "movie_output.csv":
+First, scrape all the target movie information from IMDB and save it to "movie_output.csv":
 ```python
 python imdb_scrapper_to_csv.py
 ```
@@ -60,7 +62,7 @@ FROM movie_ranking_by_genre
 | 1200 |
 
 <br/><br/>
-Lastly, randomly select 10 rows from the database as an sample to check movie infomation against the IMDB website:
+Lastly, randomly select 10 rows from the database as an sample to check movie information against the IMDB website:
 ```SQL
 SELECT *
 FROM
