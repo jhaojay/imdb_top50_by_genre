@@ -67,7 +67,7 @@ FROM movie_ranking_by_genre
 | 1200 |
 
 <br/><br/>
-Lastly, randomly select 10 rows from the database as an sample to check movie information against the IMDB website:
+Lastly, randomly select 10 rows from the database as an sample to check the movie information against the IMDB website:
 ```SQL
 SELECT *
 FROM
