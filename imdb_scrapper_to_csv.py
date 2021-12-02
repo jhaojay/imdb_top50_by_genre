@@ -38,7 +38,6 @@ genres_ranked = [
 ]
 
 
-# inside the for loop range(len(genres_ranked)
 for num_link in range(len(links)):
     print(f"Scraping movies in {genres_ranked[num_link]}")
     urls = "https://www.imdb.com" + links[num_link]
