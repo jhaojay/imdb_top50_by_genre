@@ -2,7 +2,6 @@
 In this cast study, two ETL pipelines are developed. One is that scrapes the top 50 movies from the list of "Top Rated English Movies by Genre" of each genre into a local csv file.The second ETL pipeline is that extracts raw data from the csv file, performed necessary transformations and loaded into postgresSQL database.
 <br/><br/>
 Movies' titles, release years, certificates, run time, ratings, metascores, descriptions, votes, gross, directors and casts are scrapped and stored.
-<br/><br/>
 
 # Database schema design
 (click to enlarge):
