@@ -4,7 +4,8 @@ In this cast study, two ETL pipelines are developed. One is that scrapes the top
 Movies' titles, release years, certificates, run time, ratings, metascores, descriptions, votes, gross, directors and casts are scrapped and stored.
 <br/><br/>
 
-# Database schema design(click to enlarge):
+# Database schema design
+(click to enlarge):
 ![alt text](https://github.com/jhaojay/imdb_top50_by_genre/blob/main/schema.JPG?raw=true)
 
 # Dependencies
