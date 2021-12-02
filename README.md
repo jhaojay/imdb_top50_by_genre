@@ -7,6 +7,12 @@ Movies' imdb ids, titles, release years, certificates, running time, ratings, me
 (click to enlarge):
 ![alt text](https://github.com/jhaojay/imdb_top50_by_genre/blob/main/charts/schema.JPG?raw=true)
 
+# Code design flowchats
+![alt text](https://github.com/jhaojay/imdb_top50_by_genre/blob/main/charts/flowchart1.JPG?raw=true)
+<br/><br/>
+(click to enlarge):
+![alt text](https://github.com/jhaojay/imdb_top50_by_genre/blob/main/charts/flowchart2.JPG?raw=true)
+
 # Dependencies
 Python 3.8.12 and the following Python libraries were used:
 ```python
