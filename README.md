@@ -48,39 +48,13 @@ python load_csv_to_db.py
 ```
 
 # Validation
-First, check the total row count of the output csv file in Python console.
-it should contain 1201 rows including a row of headers:
+verification.py checks the output csv file for the following criteria:
+1. File is in .csv format.
+2. File exists and not empty.
+3. File is utf-8 encoded.
+4. File has complete hearders.
+5. File contains the correct number of row.
+
 ```python
->>> import csv
->>> csv_file = "movie_output.csv"
->>> with open(csv_file,"r") as f:
-...     reader = csv.reader(f,delimiter = ",")
-...     print(len(list(reader)))
-
-1201
-```
-<br/><br/>
-Next, check the total row count in the "movie_ranking_by_genre" table in pgAdmin4:
-```SQL
-SELECT COUNT(*)
-FROM movie_ranking_by_genre
-```
-| count | 
-| :---: |
-| 1200 |
-
-<br/><br/>
-Lastly, randomly select 10 rows from the database as an sample to check the movie information against the IMDB website:
-```SQL
-SELECT *
-FROM
-	(SELECT MOVIE_INFO.TITLE,
-	 		MOVIE_INFO.IMDB_RATING,	 
-			GENRE.GENRE_TYPE,
-			MOVIE_RANKING_BY_GENRE.RANKING
-		FROM MOVIE_INFO
-		JOIN MOVIE_RANKING_BY_GENRE ON MOVIE_RANKING_BY_GENRE.MOVIE_ID = MOVIE_INFO.ID
-		JOIN GENRE ON GENRE.ID = MOVIE_RANKING_BY_GENRE.RANKED_GENRE_ID) AS INFO
-ORDER BY RANDOM()
-LIMIT 10
+$python verification.py movie_output.csv
 ```
