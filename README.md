@@ -28,7 +28,7 @@ psycopg2, configparser
 ```
 ```python
 # to verify .csv file
-chardet, os.path, sys
+chardet, os, sys
 ```
 # Installation
 Installing the necessary dependencies listed in the Dependencies section:
